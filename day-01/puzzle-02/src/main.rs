@@ -8,8 +8,8 @@ fn get_lines() -> Vec<String> {
 
 fn main() -> io::Result<()>
 {
-    let mut increases_count = 0;        // the current tally of increases
     let window_size = 3;                // the size of the windows to compare
+    let mut increases_count = 0;        // the current tally of increases
     let mut last_sum = i32::MAX;        // the last sum we're comparing against
 
     let lines = get_lines();
